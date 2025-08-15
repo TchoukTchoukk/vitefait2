@@ -55,28 +55,28 @@ export default function App() {
   const videos = [
     {
       id: 1,
-      title: "DAZN1",
+      title: "Ligue 1+",
       url: "https://rereyano.ru/player/3/20",
       vlk_link:
         "https://oohquelbut.ru/regarder-la-chaine-DAZN1-en-direct-streaming-gratuit",
     },
     {
       id: 2,
-      title: "DAZN2",
+      title: "Ligue 1+2",
       url: "https://rereyano.ru/player/3/21",
       vlk_link:
         "https://oohquelbut.ru/regarder-la-chaine-DAZN2-en-direct-streaming-gratuit",
     },
     {
       id: 3,
-      title: "DAZN3",
+      title: "Ligue 1+3",
       url: "https://rereyano.ru/player/3/22",
       vlk_link:
         "https://oohquelbut.ru/regarder-la-chaine-DAZN3-en-direct-streaming-gratuit",
     },
     {
       id: 4,
-      title: "DAZN4",
+      title: "Ligue 1+4",
       url: "https://rereyano.ru/player/3/40",
       vlk_link:
         "https://oohquelbut.ru/regarder-la-chaine-DAZN4-en-direct-streaming-gratuit",
@@ -396,7 +396,8 @@ export default function App() {
   const [openCategories, setOpenCategories] = useState({});
 
   const categorizedVideos = {
-    DAZN: videos.filter((video) => video.title.includes("DAZN")),
+    "Ligue 1+": videos.filter((video) => video.title.includes("Ligue 1+")),
+    "DAZN": videos.filter((video) => video.title.includes("DAZN")),
     "beIN SPORT": videos.filter((video) => video.title.includes("beIN SPORT")),
     canal: videos.filter((video) => video.title.includes("canal+")),
     "C+Live": videos.filter((video) => video.title.includes("C+Live")),
@@ -404,7 +405,7 @@ export default function App() {
     RMC: videos.filter((video) => video.title.includes("RMC")),
     Autre: videos.filter(
       (video) =>
-        !["DAZN", "beIN SPORT", "canal+", "Eurosport", "RMC", "C+Live"].some(
+        !["Ligue 1+", "beIN SPORT", "canal+", "Eurosport", "RMC", "C+Live"].some(
           (d) => video.title.includes(d),
         ),
     ),
