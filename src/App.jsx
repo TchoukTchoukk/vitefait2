@@ -553,7 +553,6 @@ export default function App() {
             allow="autoplay; encrypted-media"
             allowFullScreen
             rel="noopener noreferrer"
-            sandbox="allow-scripts allow-same-origin"
             frameBorder="0"
           ></iframe>
         ) : selectedVideos.length === 2 ? (
@@ -567,7 +566,6 @@ export default function App() {
                 className="w-full aspect-video rounded-md shadow border border-black h-full"
                 allow="autoplay; encrypted-media"
                 rel="noopener noreferrer"
-                sandbox="allow-scripts allow-same-origin"
                 allowFullScreen
                 frameBorder="0"
               ></iframe>
@@ -582,7 +580,6 @@ export default function App() {
               allow="autoplay; encrypted-media"
               allowFullScreen
               rel="noopener noreferrer"
-              sandbox="allow-scripts allow-same-origin"
               frameBorder="0"
             ></iframe>
             {/* Deux autres vidéos côte à côte en bas */}
@@ -595,7 +592,6 @@ export default function App() {
                   allow="autoplay; encrypted-media"
                   allowFullScreen
                   rel="noopener noreferrer"
-                  sandbox="allow-scripts allow-same-origin"
                   frameBorder="0"
                 ></iframe>
               ))}
@@ -611,7 +607,6 @@ export default function App() {
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 rel="noopener noreferrer"
-                sandbox="allow-scripts allow-same-origin"
                 frameBorder="0"
               ></iframe>
             ))}
@@ -628,7 +623,6 @@ export default function App() {
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 rel="noopener noreferrer"
-                /*sandbox="allow-scripts allow-same-origin" */
                 frameBorder="0"
               ></iframe>
             ))}
